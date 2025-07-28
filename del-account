@@ -36,7 +36,30 @@
     </style>
 </head>
 <body>
-    <h1>Delete Account</h1>
+    <div class="header-NAV">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo"><img src="https://shop.lakhiairconditioners.com/img/NABR/log.jpg" width="125px" alt="Company Logo"></div>
+                <nav>
+                    <ul id="Menuitems">
+                        <li><a href="https://shop.lakhiairconditioners.com">Home</a></li>
+                        <li><a href="https://shop.lakhiairconditioners.com/about.html">About Us</a></li>
+                        <li><a href="https://shop.lakhiairconditioners.com/products.html">All Products</a></li>
+                        <li><a href="https://shop.lakhiairconditioners.com/AC-only.html">AC Products</a></li>
+                        <li><a href="https://shop.lakhiairconditioners.com/contact.html">Contact Us</a></li>
+                        <li><a href="https://shop.lakhiairconditioners.com/account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="https://shop.lakhiairconditioners.com/img/NABR/menu.png" class="menu-icon" onclick="menutoggle()" alt="Menu Icon">
+            </div>
+        </div>
+    </div>
+    <div class="color-NAV"><br><br></div>
+    
+    <div class="container"> 
+        <center>
+            <div class="main atpage">
+                <h1>Delete Account</h1>
     <p>YOUR DATA THAT IS LINKED TO YOUR UID MAY BE DELETED BUT YOUR CUSTOMER DATA WILL NOT</p><br>
     <p>• If you want to delete your account, please follow the steps below.</
     <h1>STEP 1</h1><BR>
@@ -47,4 +70,71 @@
     <p>you would have received an email to the link account to delete it</p>
     <h1>STEP 4</h1>
     <p>click on the link in the email and follow the step show to delete your account</p>
+        </center>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="foot-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android but not <u>iphone</u>for now</p>
+                    <div class="app-logo">
+                        <a href=""><img src="https://shop.lakhiairconditioners.com/img/NABR/apk-down.jpeg" alt="download apk file"></a>
+                    </div>
+                </div>
+                <div class="foot-col-2">
+                    <img src="https://shop.lakhiairconditioners.com/img/log-w.png" width="200px" alt="Company Logo">
+                    <p>Our Purpose Is to give the best deal and products to the Many.</p>
+                </div>
+                <div class="foot-col-3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <Li><a href="https://main.lakhiairconditioners.com/TAC">Terms and Conditions</a></Li>
+                        <Li><a href="https://main.lakhiairconditioners.com/PP">Privacy Policy</a></Li>
+                        <li><a href="https://lakhiairconditioners.com">INFO</a></li>
+                        <li><a href="https://maps.lakhiairconditioners.com">G-MAPS</a></li>
+                    </ul>
+                </div>
+                <div class="foot-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <Li><a href="https://insta.lakhiairconditioners.com">Instagram</a></Li>
+                        <Li><a href="https://fb.lakhiairconditioners.com">Facebook</a></Li>
+                    </ul>
+                    <h3 style="margin-top: 20px">Contant info</h3>
+                    <ul>
+                        <li><a href="tel:+919825513000">+919825513000</a></li>
+                        <li><a href="mailto:info@lakhiairconditioners?subject=Feedback&amp;body=Hi%20there,%20I%20have%20some%20feedback%20for%20you.">info@lakhiairconditioners.com</a></li>
+                        <li><a href="https://bc.lakhiairconditioners.com">Business-card</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">©2025 lakhiairconditioners<br>
+                all right given to fontawesome for their icons
+                <a href="https://www.flaticon.com/free-icons/menu" title="menu icons">Menu icons created by ariefstudio - Flaticon</a></p>
+
+        </div>
+    </div> 
+
+    <script>
+        var Menuitems = document.getElementById('Menuitems');
+        // Ensure Menuitems exists before setting style
+        if (Menuitems) {
+            Menuitems.style.maxHeight = "0px";
+        }
+
+        function menutoggle(){
+            if(Menuitems) { // Check again if Menuitems exists
+                if(Menuitems.style.maxHeight == "0px") {
+                    Menuitems.style.maxHeight = "200px";
+                } else {
+                    Menuitems.style.maxHeight = "0px";
+                }
+            }
+        }
+    </script>
+</body>
+    
 </html>
