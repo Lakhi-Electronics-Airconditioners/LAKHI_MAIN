@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lakhi Electronic Airconditions | MAIN</title>
+    <meta name='description' content='things on lakhi airconditoners which are copyrighted'>
+    <title>Lakhi Electronic Airconditions | copyright</title>
     <link rel="icon" href="shop.lakhiairconditioners.com/img/1x1-logo.png">
     <link rel="stylesheet" href="https://shop.lakhiairconditioners.com/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -36,6 +37,89 @@
     </style>
 </head>
 <body>
+    <!-- Terms and Conditions Modal (Initial Agreement) -->
+    <div id="tacpp" class="w3-modal-content">
+        <div class="w3-center" style="margin-bottom:20px;">
+            <span 
+                onclick="closeModal()" 
+                class="close-button" 
+                title="Close Modal">
+                Close ×
+            </span>
+            <h2>Please Agree to Proceed</h2>
+        </div>
+        <form class="w3-container">
+            <!-- Agreement Checkbox -->
+            <div class="w3-section" style="margin-bottom:20px; text-align:left;">
+                <input type="checkbox" id="agree">
+                <label for="agree">
+                    I agree to the 
+                    <a href="https://shop.lakhiairconditioners.com/info/TAC">
+                        Terms and Conditions
+                    </a> 
+                    and 
+                    <a href="https://shop.lakhiairconditioners.com/info/PP">
+                        Privacy Policy
+                    </a>.
+                </label>
+            </div>
+            <!-- Disclaimer Section -->
+            <p style="font-size:14px; margin-bottom:20px;">
+                * Prices may not be accurate, and not all products are listed.<br>
+                *product may not be in stock or may not even be buyable <br>
+                * price may go down because of some gst/cst payment things
+            </p>
+            <!-- Continue Button -->
+            <div class="w3-center">
+                <button 
+                    type="button"
+                    class="btn-modal" 
+                    onclick="continueAction(event)">
+                    Continue
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Terms and Conditions Update Modal -->
+    <div id="updateTacppModal" class="w3-modal-content">
+        <div class="w3-center" style="margin-bottom:20px;">
+            <span 
+                onclick="closeUpdateModal()" 
+                class="close-button" 
+                title="Close Modal">
+                Close ×
+            </span>
+            <h2>Terms and Conditions Updated</h2>
+        </div>
+        <form class="w3-container">
+            <!-- Update Agreement Checkbox -->
+            <div class="w3-section" style="margin-bottom:20px; text-align:left;">
+                <p>Our Terms and Conditions and Privacy Policy have been updated. Please review the changes and agree to continue.</p>
+                <input type="checkbox" id="agreeUpdate">
+                <label for="agreeUpdate">
+                    I agree to the updated 
+                    <a href="https://shop.lakhiairconditioners.com/info/TAC">
+                        Terms and Conditions
+                    </a> 
+                    and 
+                    <a href="https://shop.lakhiairconditioners.com/info/PP">
+                        Privacy Policy
+                    </a>.
+                </label>
+            </div>
+            <!-- Continue Button for Update -->
+            <div class="w3-center">
+                <button 
+                    type="button"
+                    class="btn-modal" 
+                    onclick="continueUpdateAction(event)">
+                    Agree to Update
+                </button>
+            </div>
+        </form>
+    </div>
+    <script src="https://shop.lakhiairconditioners.com/TACPP.js" defer></script>
     <div class="header-NAV">
         <div class="container">
             <div class="navbar">
@@ -43,14 +127,14 @@
                 <nav>
                     <ul id="Menuitems">
                         <li><a href="https://shop.lakhiairconditioners.com">Home</a></li>
-                        <li><a href="https://shop.lakhiairconditioners.com/about.html">About Us</a></li>
-                        <li><a href="https://shop.lakhiairconditioners.com/products.html">All Products</a></li>
-                        <li><a href="https://shop.lakhiairconditioners.com/AC-only.html">AC Products</a></li>
-                        <li><a href="https://shop.lakhiairconditioners.com/contact.html">Contact Us</a></li>
-                        <li><a href="https://shop.lakhiairconditioners.com/account.html">Account</a></li>
+                        <li><a href="https://shop.lakhiairconditioners.com/about">About Us</a></li>
+                        <li><a href="https://shop.lakhiairconditioners.com/products">All Products</a></li>
+                        <li><a href="https://shop.lakhiairconditioners.com/AC-only">AC Products</a></li>
+                        <li><a href="https://shop.lakhiairconditioners.com/contact">Contact Us</a></li>
+                        <li><a href="https://shop.lakhiairconditioners.com/account">Account</a></li>
                     </ul>
                 </nav>
-                <img src="https://shop.lakhiairconditioners.com/img/NABR/menu.png" class="menu-icon" onclick="menutoggle()">
+                <img src="https://shop.lakhiairconditioners.com/img/NABR/menu.png" class="menu-icon" onclick="menutoggle()" alt="menu icon">
             </div>
         </div>
     </div>
@@ -60,8 +144,9 @@
         <center>
             <div class="main atpage">
                 <h1>copyright</h1>
-                <p>All rights reserved to Lakhi Airconditioners</p>
                 <p>©2025 Lakhi Airconditioners</p>
+                <p>lakhi airconditoners has rights to reserved on the website code</p>
+                <p>all the product show in are website are not are products</p>
                 <p>all right given to fontawesome for their icons</p>
                 <p><a href="https://www.flaticon.com/free-icons/menu" title="menu icons">Menu icons for small screen is created by ariefstudio - Flaticon</a></p
         </center>
@@ -74,11 +159,11 @@
                     <h3>Download Our App</h3>
                     <p>Download App for Android but not <u>iphone</u>for now</p>
                     <div class="app-logo">
-                        <a href=""><img src="https://shop.lakhiairconditioners.com/img/NABR/apk-down.jpeg"></a>
+                        <a href="https://drive.google.com/uc?export=download&id=1jx18KtEjAwaQtto0XqbPWe8cz49oUuUG"><img src="https://shop.lakhiairconditioners.com/img/NABR/apk-down.jpeg" alt="Download App"></a>
                     </div>
                 </div>
                 <div class="foot-col-2">
-                    <img src="https://shop.lakhiairconditioners.com/img/log-w.png" width="200px">
+                    <img src="https://shop.lakhiairconditioners.com/img/log-w.png" width="200px" alt="Lakhi Airconditioners Logo">
                     <p>Our Purpose Is to give the best deal and products to the Many.</p>
                 </div>
                 <div class="foot-col-3">
@@ -93,10 +178,10 @@
                 <div class="foot-col-4">
                     <h3>Follow us</h3>
                     <ul>
-                        <Li><a href="https://insta.lakhiairconditioners.com">Instagram</a></Li>
-                        <Li><a href="https://fb.lakhiairconditioners.com">Facebook</a></Li>
+                        <Li><a href="https://insta.lakhiairconditioners.com/">Instagram</a></Li>
+                        <Li><a href="https://fb.lakhiairconditioners.com/">Facebook</a></Li>
                     </ul>
-                    <h3 style="margin-top: 20px">Contant info</h3>
+                    <h3 style="margin-top: 20px">Contact Info</h3>
                     <ul>
                         <li><a href="tel:+919825513000">+919825513000</a></li>
                         <li><a href="mailto:info@lakhiairconditioners?subject=Feedback&amp;body=Hi%20there,%20I%20have%20some%20feedback%20for%20you.">info@lakhiairconditioners.com</a></li>
@@ -105,12 +190,12 @@
                 </div>
             </div>
             <hr>
-            <p class="copyright">©2025 lakhiairconditioners<br>
+            <p class="copyright">&copy; 2025 Lakhi Airconditioners. All rights reserved.<br>
                 all right given to fontawesome for their icons
                 <a href="https://www.flaticon.com/free-icons/menu" title="menu icons">Menu icons created by ariefstudio - Flaticon</a></p>
 
         </div>
-    </div> 
+    </div>
 
     <script>
         var Menuitems = document.getElementById('Menuitems');

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lakhi Airconditioners | Offline</title>
+  <meta name="description" content="Bro you not offine so you dont need to it just play the game at shop.lakhiairconditioners.com/game">
+  <link rel="icon" href="https://shop.lakhiairconditioners.com/img/1x1-logo.png">
+  <link rel="stylesheet" href="https://shop.lakhiairconditioners.com/styles.css">
+  <link rel="stylesheet" href="https://shop.lakhiairconditioners.com/DOWNLOADED CSS/fontawesome-free-6.7.2-web/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <div class="header-NAV">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo"><img src="img/NABR/log.jpg" width="125px" alt="lakhi airconditioners logo"></div>
+        <nav>
+          <ul id="Menuitems">
+            <li><a href="https://shop.lakhiairconditioners.com/">Home</a></li>
+            <li><a href="https://shop.lakhiairconditioners.com/about">About Us</a></li>
+            <li><a href="https://shop.lakhiairconditioners.com/products">All Products</a></li>
+            <li><a href="https://shop.lakhiairconditioners.com/AC-only">AC Products</a></li>
+            <li><a href="https://shop.lakhiairconditioners.com/contact">Contact Us</a></li>
+            <li><a href="https://shop.lakhiairconditioners.com/account">Account</a></li>
+          </ul>
+        </nav>
+        <a href="https://shop.lakhiairconditioners.com/cart"><img src="img/NABR/SCI.png" width="30px" alt="shopping cart icon"></a>
+        <img src="img/NABR/menu.png" class="menu-icon" onclick="menutoggle()" alt="menu icon">
+      </div>
+    </div>
+  </div>
+
+  <div class="color-NAV">
+    <br><br>
+    <a href="#" class="back-button" onclick="history.back(); return false;">&larr; Back</a>
+  </div>
+
+  <div class="container">
+    <h2 style="color: red; text-align: center;">⚠️ You are viewing an offline version</h2>
+    <div id="game-area" style="margin-top: 40px; text-align: center;">
+      <h3>🎮 Try this game while you're offline!</h3>
+      <h3>Click on the Red dot</h3>
+      <div id="circle"></div>
+      <p>Score: <span id="score">0</span></p>
+    </div>
+        <button class="btn" onclick="checkAndReload()">
+                    check and reload
+                </button>
+    <div>
+      
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="foot-col-2">
+        <img src="img/log-w.png" width="200px" alt="Lakhi Airconditioners Logo">
+        <p>Our Purpose Is to give the best deal and products to the Many.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🔔 Popup -->
+  <div id="offline-popup" class="w3-modal-content w3-center">
+    <p id="popup-message">Nice try buddy, but you're offline.</p>
+    <button onclick="closePopup()" class="btn">OK</button>
+    <button onclick="forceGo()" class="btn">Just let me go</button>
+  </div>
+
+  <script>
+    function menutoggle() {
+      const Menuitems = document.getElementById("Menuitems");
+      if (Menuitems.style.maxHeight === "0px") {
+        Menuitems.style.maxHeight = "200px";
+      } else {
+        Menuitems.style.maxHeight = "0px";
+      }
+    }
+
+
+    // 😎 Link Interception
+    let targetHref = null;
+
+    document.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        targetHref = this.href;
+
+        document.getElementById('popup-message').textContent = "Nice try buddy, but you're offline.";
+        document.getElementById('offline-popup').style.display = 'block';
+      });
+    });
+
+    function closePopup() {
+      document.getElementById('offline-popup').style.display = 'none';
+      targetHref = null;
+    }
+
+    function forceGo() {
+      document.getElementById('offline-popup').style.display = 'none';
+
+      if (targetHref) {
+        const isInternal = targetHref.includes(location.hostname);
+
+        if (isInternal) {
+          setTimeout(() => {
+            alert("Welcome back! Good to see you again. Told you so 😎");
+          }, 800);
+        } else {
+          window.location.href = targetHref;
+        }
+      }
+    }
+    function checkAndReload() {
+      const intervalId = setInterval(() => {
+        if (navigator.onLine) {
+          console.log('Network is back online! Reloading the page.');
+          clearInterval(intervalId); // Stop checking
+          window.location.reload(); // Reload the page
+        } else {
+            console.log('Still offline...');
+    }
+  }, 3000); // Check every 3 seconds (3000 milliseconds)
+}
+  </script>
+</body>
+</html>
