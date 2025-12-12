@@ -3,37 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name='description' content='things on lakhi airconditoners which are copyrighted'>
-    <title>Lakhi Electronic Airconditions | copyright</title>
-    <link rel="icon" href="shop.lakhiairconditioners.com/img/1x1-logo.png">
+    <meta name="description" content="this is just a template for the website (not for public use)">
+    <title>Lakhi Electronic Airconditions | </title>
+    <link rel="icon" href="img/1x1-logo.png">
     <link rel="stylesheet" href="https://shop.lakhiairconditioners.com/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="DOWNLOADED CSS/fontawesome-free-6.7.2-web/css/all.css">
-    <link rel="stylesheet" href="DOWNLOADED CSS/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="https://shop.lakhiairconditioners.com/DOWNLOADED CSS/fontawesome-free-6.7.2-web/css/all.css">
+    <link rel="stylesheet" href="https://shop.lakhiairconditioners.com/DOWNLOADED CSS/fontawesome-free-6.7.2-web/css/all.min.css">
     <meta name="google-site-verification" content="3WJMESWY8huA1C6uNJbxahjiRoTCzahkcjAxx0WDuLw" />
-    <link rel="icon" href="info.png" type="image/png">
-    <script src="https://shop.lakhiairconditioners.com/menubar.js"></script>
+    <script src="https://shop.lakhiairconditioners.com/TACPP.js" defer></script>
+    <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
     
     <script>
-        // Register the service worker - Keep this if needed
-        if ("serviceworker" in navigator) {
-            navigator.serviceWorker.register("service-worker.js");
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('https://shop.lakhiairconditioners.com/service-worker.js')
+                .then(() => console.log('✅ Service Worker registered'))
+                .catch(err => console.error('Service Worker error:', err));
         }
     </script>
     <style>
-        .atpage p{
+        .text p{
             font-style: normal;
             color: #000;
             font-weight: bold;
+            display: flex; 
+            flex-wrap: wrap;
+            margin-left: auto;
+            margin-right: auto;
             
         }
-        .atpage a{
+        .text a{
             text-decoration: none;
             color: #ff523b;
             font-weight: bolder;
         }
-        .main h1{
+        
+        .text h1{
             color: rgb(209, 39, 17)
+        }
+        .title2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: firebrick;
+        }
+        .text h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: firebrick;
+        }
+        .text li{
+            font-style: normal;
+            color: #000;
+            font-weight: bold;
+            text-align: center;
+        }
+        .text h4{
+            font-style: normal;
+            color: #000;
+            font-weight: bold;
+            text-align: center;
+        }
+        .text-1{
+            font-style: normal;
+            color: #9c9c9c;
+            font-weight: bold;
+            text-align: center;
         }
     </style>
 </head>
@@ -52,9 +86,9 @@
         <form class="w3-container">
             <!-- Agreement Checkbox -->
             <div class="w3-section" style="margin-bottom:20px; text-align:left;">
-                <input type="checkbox" id="agree">
+                <input type="checkbox" id="agree" title="Agree to the updated Terms and Conditions and Privacy Policy">
                 <label for="agree">
-                    I agree to the 
+                    I agree to the updated 
                     <a href="https://shop.lakhiairconditioners.com/info/TAC">
                         Terms and Conditions
                     </a> 
@@ -67,8 +101,7 @@
             <!-- Disclaimer Section -->
             <p style="font-size:14px; margin-bottom:20px;">
                 * Prices may not be accurate, and not all products are listed.<br>
-                *product may not be in stock or may not even be buyable <br>
-                * price may go down because of some gst/cst payment things
+                *product may not be in stock or may not even be buyable anymore
             </p>
             <!-- Continue Button -->
             <div class="w3-center">
@@ -120,7 +153,7 @@
             </div>
         </form>
     </div>
-    <script src="https://shop.lakhiairconditioners.com/TACPP.js" defer></script>
+    
     <div class="header-NAV">
         <div class="container">
             <div class="navbar">
@@ -130,26 +163,24 @@
                         <li><a href="https://shop.lakhiairconditioners.com">Home</a></li>
                         <li><a href="https://shop.lakhiairconditioners.com/about">About Us</a></li>
                         <li><a href="https://shop.lakhiairconditioners.com/products">All Products</a></li>
-                        <li><a href="https://shop.lakhiairconditioners.com/AC-only">AC Products</a></li>
+                        <li><a href="https://shop.lakhiairconditioners.com/AC-only">All Airconditionrs</a></li>
                         <li><a href="https://shop.lakhiairconditioners.com/contact">Contact Us</a></li>
                         <li><a href="https://shop.lakhiairconditioners.com/account">Account</a></li>
                     </ul>
                 </nav>
+                <a href="https://shop.lakhiairconditioners.com/cart"><img src="https://shop.lakhiairconditioners.com/img/NABR/SCI.png" width="30px" height="30px" alt="Shopping Cart Icon"></a>
                 <img src="https://shop.lakhiairconditioners.com/img/NABR/menu.png" class="menu-icon" onclick="menutoggle()" alt="menu icon">
+                <script src="https://shop.lakhiairconditioners.com/menubar.js"></script>
             </div>
         </div>
     </div>
-    <div class="color-NAV"><br><br></div>
+    
+    <div class="color-NAV"><br><br><a href="#" class="back-button" onclick="history.back(); return false;">&larr; Back</a></div>
     
     <div class="container"> 
         <center>
-            <div class="main atpage">
-                <h1>copyright</h1>
-                <p>©2025 Lakhi Airconditioners</p>
-                <p>lakhi airconditoners has rights to reserved on the website code</p>
-                <p>all the product show in are website are not are products</p>
-                <p>all right given to fontawesome for their icons</p>
-                <p><a href="https://www.flaticon.com/free-icons/menu" title="menu icons">Menu icons for small screen is created by ariefstudio - Flaticon</a></p
+            <h1 class="title">You Are on the wrong page for finding forms</h1>
+            <p>go to <a href="https://shop.lakhiairconditioners.com/forms">shop.lakhiairconditioners.com/forms</a></p>
         </center>
     </div>
 
